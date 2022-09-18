@@ -6,8 +6,8 @@ const noOfNotes = document.querySelectorAll(".no-of-notes");
 
 const availableNotes = [2000, 500, 100, 50, 20, 10 , 5, 1];
 
-// let BillAmount = Number(billAmount.value);
-// let CashGiven = Number(cashGiven.value);
+let BillAmount = Number(billAmount.value);
+ let CashGiven = Number(cashGiven.value);
 
 // console.log(cashGiven.value);
 // checkButton.addEventListener("click" ,() => console.log("clicked"));
