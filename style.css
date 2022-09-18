@@ -148,10 +148,10 @@ footer{
 footer p{
     font-size: large;
     text-align: center;
-    padding: 2rem;
+    padding: 0.5rem;
 }
 .footer-list{
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 a, img, li{
