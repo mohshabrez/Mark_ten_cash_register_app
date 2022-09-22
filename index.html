@@ -10,18 +10,30 @@
 </head>
 <body>
     <div class="container">
+        <div class="head">
         <h1 class="heading">Cash Register Manager</h1>
         <p class="description">
             Enter the bill amount and cash given by the customer
             and know minimum number notes to be return.
         </p>
-        <label for="Bill-amount">Bill Amount:</label>
-        <input class="input" id ="Bill-amount" type="text">
-        <!-- <button id = "check-button">Next</button> -->
-        <label for="cash-given">Cash Given:</label>
-        <input class="input" id="cash-given" type="text">
-        <button id = "check-button">Check</button>
-        <p id="error-message"></p>
+        <div class="body">
+            <div class="input">
+                <div class="billing">
+                    <label for="Bill-amount">Bill Amount:</label>
+                    <input class="input_bill" id ="Bill-amount" type="text">
+                </div>
+                <button id = "check-button-next">Next</button>
+            </div>
+        <div class="cashing">
+            <label for="cash-given">Cash Given:</label>
+            <input class="input_cash" id="cash-given" type="text">
+        </div>
+        <div>
+            <button id = "check-button-cash">Check</button>
+        </div>
+        <div id="error-message">
+        </div>
+        <div class="return">
         <table class="change-table">
             <caption>Return Change</caption>
             <tr>
@@ -48,10 +60,13 @@
             </tr>
         </table> 
     </div>
+</div>
+</div>
     <footer>
         <p>© | 2022 | Shabrez</p>
         <ul class="footer-list">
             <li> <a class="links" href="https://github.com/mohshabrez"><img src="github.png" alt="Github"></a></li>
+            <li><a class="links" href="https://twitter.com/ShabrezMohammed"><img src="twitter.png" alt="twitter"></a></li>
             <li><a class="links" href="https://www.linkedin.com/in/g-shabrez-785362159/"><img src="linkedin.png" alt="Linkedin"></a></li>
             <!-- <li><a class="links" href=""><img src="" alt=""></a></li> -->
             <!-- <li><a class="links" href=""><img src="" alt=""></a></li> -->
