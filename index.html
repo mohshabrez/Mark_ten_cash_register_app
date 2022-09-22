@@ -9,31 +9,22 @@
     <title>Cash Register App</title>
 </head>
 <body>
-    <div class="container">
-        <div class="head">
-        <h1 class="heading">Cash Register Manager</h1>
-        <p class="description">
-            Enter the bill amount and cash given by the customer
-            and know minimum number notes to be return.
-        </p>
-        <div class="body">
-            <div class="input">
-                <div class="billing">
-                    <label for="Bill-amount">Bill Amount:</label>
-                    <input class="input_bill" id ="Bill-amount" type="text">
-                </div>
-                <button id = "check-button-next">Next</button>
-            </div>
-        <div class="cashing">
-            <label for="cash-given">Cash Given:</label>
-            <input class="input_cash" id="cash-given" type="text">
-        </div>
-        <div>
-            <button id = "check-button-cash">Check</button>
-        </div>
-        <div id="error-message">
-        </div>
-        <div class="return">
+    <h1 class="heading">Cash Register Manager</h1>
+    <p class="description">
+     Enter the bill amount and cash given by the customer
+    and know minimum number notes to be return.
+</p>
+<div>
+    <label for="Bill-amount">Bill Amount:</label>
+</div>              
+<input class="input_bill" id ="Bill-amount" type="number">
+    <!-- <button id = "check-button-next">Next</button>> -->
+    <div>
+    <label for="cash-given">Cash Given:</label>
+</div>
+    <input class="input_cash" id="cash-given" type="number">
+    <button id = "check-button">Check</button>
+    <div id="error-message"></div>
         <table class="change-table">
             <caption>Return Change</caption>
             <tr>
@@ -59,9 +50,6 @@
                 <td>1</td>
             </tr>
         </table> 
-    </div>
-</div>
-</div>
     <footer>
         <p>© | 2022 | Shabrez</p>
         <ul class="footer-list">

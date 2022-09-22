@@ -3,25 +3,25 @@ const cashGiven = document.querySelector("#cash-given");
 const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
-const nextBtn = document.querySelector("#check-button-next");
-const cashBox = document.querySelector(".cashing");
-const checkbtn = document.querySelector("#cash-button-cash");
-const returnChg = document.querySelector(".return");
+// const nextBtn = document.querySelector("#check-button-next");
+// const cashBox = document.querySelector(".cashing");
+// const checkbtn = document.querySelector("#cash-button-cash");
+// const returnChg = document.querySelector(".return");
 
 const availableNotes = [2000, 500, 100, 50, 20, 10 , 5, 1];
 
-let BillAmount = Number(billAmount.value);
- let CashGiven = Number(cashGiven.value);
+// let BillAmount = Number(billAmount.value);
+// let CashGiven = Number(cashGiven.value);
 
 // console.log(cashGiven.value);
 // checkButton.addEventListener("click" ,() => console.log("clicked"));
 
 checkButton.addEventListener("click", function validateBillAndCashAmount(){
     hideMessage();
-    if (billAmount.value > 0){
-        if(cashGiven.value >= billAmount.value){
-            console.log("checked")
-            const amountToBeReturned =  cashGiven.value - billAmount.value;
+    if (Number(billAmount.value) > 0){
+        if(Number(cashGiven.value) >= Number(billAmount.value)){
+            // console.log("checked")
+            const amountToBeReturned =  Number(cashGiven.value) - Number(billAmount.value);
             calculateChange(amountToBeReturned);
        }
        else{
